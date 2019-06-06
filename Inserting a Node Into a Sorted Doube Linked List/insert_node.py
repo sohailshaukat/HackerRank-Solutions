@@ -1,3 +1,9 @@
+'''
+Arguments: head(head of linked list), data(data to be inserted as a new node)
+Output: head(head of new altered linked list)
+-sohailshaukat ( https://github.com/sohailshaukat )
+-sohail47k@gmail.com
+'''
 def sortedInsert(head, data):
     current = head
     node = DoublyLinkedListNode(data)
