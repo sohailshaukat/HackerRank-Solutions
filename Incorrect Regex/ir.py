@@ -1,6 +1,6 @@
 '''
 problem URL: https://www.hackerrank.com/challenges/incorrect-regex/problem
--sohailshaukat ( https://github.com/sohailshaukat )
+-sohailshaukat  ( https://github.com/sohailshaukat )
 -sohail47k@gmail.com
 '''
 import re
