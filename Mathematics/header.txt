@@ -1,0 +1,6 @@
+#! python3
+'''
+problem URL: https://www.hackerrank.com/challenges/restaurant/problem?isFullScreen=true&h_r=next-challenge&h_v=zen
+-sohailshaukat ( https://github.com/sohailshaukat )
+-sohail47k@gmail.com
+'''
