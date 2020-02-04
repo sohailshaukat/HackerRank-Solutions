@@ -1,6 +1,4 @@
 '''
-Arguments:
-Output:
 -sohailshaukat ( https://github.com/sohailshaukat )
 -sohail47k@gmail.com
 '''
