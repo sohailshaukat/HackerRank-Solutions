@@ -1,0 +1,14 @@
+'''
+
+A boundary set would be an object that would contain only minimum and maximum
+value of that set reducing the space complexity to constant.
+
+For each 'el'
+    check for compatible set
+        if yes
+            add to that set, boundary set could be used.
+        if no
+            create new set
+
+'''
+
