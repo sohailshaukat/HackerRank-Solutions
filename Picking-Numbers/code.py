@@ -1,34 +1,30 @@
 #! usr/bin/python3
 
-'''
-
-A boundary set would be an object that would contain only minimum and maximum value of that set reducing the space complexity to constant.
-
-For each 'el'
-    check for compatible set
-        if yes
-            add to that set, boundary set could be used.
-        if no
-            create new set
-
-'''
-from collections import namedtuple
-
-
-
-def isCompatible(el, sets):
-    if sets == []:
-        return False
-    for i,s in enumerate(iter(sets)):
-        if s.lower-1 <= el <= s.upper+1 :
-            return i 
-
 length = int(input().rstrip())
 arr = list(map(int, input().rstrip().split()))
 
-sets = []
+elements = set(arr)
+element_count = len(elements)
+occurences = dict(zip(elements,[0]*element_count))
 
-for i,el in enumerate(iter(arr)):
-    compatibleWith = isCompatible(el,sets):
-    if compatibleWith is False:
-        
+maximum_occurences = 0
+
+for element in iter(arr):
+    occurences[element] += 1
+    if occurences[element] > maximum_occurences:
+        maximum_occurences = occurences[element]
+
+elements = list(elements)
+maximum_length = maximum_occurences
+
+ptr = 0
+while ptr < element_count-1:
+    tptr = elements[ptr]
+    hptr = elements[ptr+1]
+    if hptr - tptr == 1:
+        if occurences[tptr]+occurences[hptr] > maximum_length:
+            maximum_length = occurences[tptr]+occurences[hptr] 
+    ptr += 1
+
+print(maximum_length)
+
